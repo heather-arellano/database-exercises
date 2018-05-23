@@ -1,10 +1,9 @@
 USE employees;
 
 
-
-SELECT  first_name, last_name
-FROM employees
-WHERE (first_name  = 'Irena' or first_name  = 'Vidya' or first_name  = 'Maya') AND order by first_name ASC;
+SELECT *FROM employees
+WHERE (first_name  = 'Irena' or first_name  = 'Vidya' or first_name  = 'Maya')
+order by last_name, first_name ASC;
 
 SELECT last_name
 FROM employees
